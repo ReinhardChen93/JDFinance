@@ -1,0 +1,13 @@
+@charset "UTF_8";
+
+@mixin flex($direction:colum,$inline:block){
+  display: if($inline==block,flex,inline-flex);
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
+
+.router-link-exact-active{
+  p{
+    color: #f04752 !important;
+  }
+}
